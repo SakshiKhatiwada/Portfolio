@@ -10,7 +10,7 @@ const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
-    const onUpdateLink = ({value}) => {
+    const onUpdateLink = (value) => {
         setActiveLink(value);
     }
 
@@ -30,7 +30,7 @@ const NavBar = () => {
     },[])
 
     return (
-        <main className={ scrolled? "scrolled" : ""}>
+        <main className={ scrolled? "header-container scrolled" : "header-container"}>
             <nav className='navigation'>
                 <div href='#home'>
                     <img src={logo} alt="logo" className='logo-img'/>

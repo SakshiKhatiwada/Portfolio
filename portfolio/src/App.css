@@ -222,7 +222,7 @@ span.navbar-text {
 }
 
 /* Navbar's Let's connect button features */
-.navbar-text button, .btn {
+.navbar-text button, .hero-section button {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
@@ -238,7 +238,7 @@ span.navbar-text {
   z-index: 1;
 }
 
-.navbar-text button::before, .btn::before {
+.navbar-text button::before, .hero-section button::before {
   content: '';
   width: 0%;
   height: 100%;
@@ -251,30 +251,31 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 
-.navbar-text button:hover, .btn:hover {
+.navbar-text button:hover, .hero-section button:hover {
   color: #121212;
 }
 
-.navbar-text button:hover::before, .btn:hover::before {
+.navbar-text button:hover::before, .hero-section button:hover::before {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-.btn{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
 /* ----------------------------- */
+/* .header-container{
+  position: absolute;
+} */
 nav.navigation{
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  /* position: fixed; */
+
+
 }
 
 #basic-navbar-nav{
