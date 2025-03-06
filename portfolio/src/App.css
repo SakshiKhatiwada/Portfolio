@@ -253,6 +253,7 @@ span.navbar-text {
 
 .navbar-text button:hover, .btn:hover {
   color: #121212;
+  
 }
 
 .navbar-text button:hover::before, .btn:hover::before {

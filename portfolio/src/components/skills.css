@@ -1,0 +1,59 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+    height: 200px;
+    width: 200px;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar {
+    color: #121212;
+    font-weight: 600;
+    background-color: whitesmoke;
+    box-shadow: inset 5px 5px 3px 2px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 3px -2px rgba(255, 255, 255, .2),
+        3px 3px 2px 1px rgba(0, 0, 0, .2),
+        -3px -3px 3px -1px rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.progress-bar::after {
+    position: absolute;
+    content: '';
+    background-color: whitesmoke;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-image: none;
+    padding: 20px;
+    z-index: -4;
+    box-shadow:  5px 5px 3px 2px rgba(0,0,0,0.2), -5px -5px 3px -2px rgba(255,255,255,.1);
+    animation: barColor 3s linear forwards;
+}
+
+@keyframes barColor {
+    from{
+        background: none;
+    }
+   to{
+       background: conic-gradient(from 90deg, red 0%,
+        blue 25%, 
+        green 50%,
+        transparent 50%,
+        transparent 100%);
+    }
+}
