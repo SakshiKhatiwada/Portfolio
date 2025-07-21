@@ -1,0 +1,49 @@
+:root{
+    --raisin-black: #2e2836;
+    --caribbean-current: #3c6e71;
+    --celadon: #bde4a7;
+    --thistle: #d0bcd5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: Sans;
+    font-size: 16px;
+    background-color: var(--raisin-black);
+    color: whitesmoke;
+}
+
+/* SECTION By Tag Names */
+img {
+    height: 30px;
+    aspect-ratio: 1;
+    /* background-color: var(--thistle); */
+    border-radius: 50%;
+}
+
+/* SECTION By class/id Names */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto
+}
+
+.header div, .header nav{
+    padding: 5px;
+    display: flex;
+    gap: 2rem;
+    font-weight: bold;
+}
+
+.header .social-media{
+gap: 1rem ;
+}
+
+.logo{
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 20px;
+}
